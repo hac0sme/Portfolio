@@ -1,2 +1,2 @@
 FLASK_APP= portfolio
-FLASK_DEBUG= 0
+FLASK_DEBUG= 1

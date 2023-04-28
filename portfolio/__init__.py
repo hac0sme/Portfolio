@@ -3,26 +3,37 @@ from flask import Flask, render_template, abort
 app = Flask(__name__)
 projects = [
     {
-        "name": "Habit tracking app with Python and MongoDB",
-        "thumb": "img/habit-tracking.png",
-        "hero": "img/habit-tracking-hero.png",
-        "categories": ["python", "web"],
+        "name": "Coefficient Voting for Residential Properties",
+        "thumb": "img/voting.png",
+        "hero": "img/voting-hero.png",
+        "categories": ["PHP", "JavaScript", "MySQL"],
+        "slug": "coeff-voting",
+        "prod": "https://votacionesasamblea.space/usuario/1",
+    },
+    {
+        "name": "Movies Watch List",
+        "thumb": "img/movies.png",
+        "hero": "img/movies-hero.png",
+        "categories": ["Python", "Mongo DB", "Jinja2"],
+        "slug": "movies-watchlist",
+        "prod": "https://movieswatchlist.onrender.com/",
+    },
+    {
+        "name": "Habits Tracking",
+        "thumb": "img/habit.png",
+        "hero": "img/habit-hero.png",
+        "categories": ["python","Flask", "Mongo DB"],
         "slug": "habit-tracking",
-        "prod": "https://udemy.com",
+        "prod": "https://habit-tracker-cando.onrender.com/",
     },
+    
     {
-        "name": "Personal finance tracking app with React",
-        "thumb": "img/personal-finance.png",
-        "hero": "img/personal-finance.png",
-        "categories": ["react", "javascript"],
-        "slug": "personal-finance",
-    },
-    {
-        "name": "REST API Documentation with Postman and Swagger",
-        "thumb": "img/rest-api-docs.png",
-        "hero": "img/rest-api-docs.png",
-        "categories": ["writing"],
-        "slug": "api-docs",
+        "name": "Microblog",
+        "thumb": "img/blog.png",
+        "hero": "img/blog-hero.png",
+        "categories": ["Python", "Mongo DB"],
+        "slug": "microblog",
+         "prod": "https://microblog-70cy.onrender.com/",
     },
 ]
 

@@ -1,6 +1,53 @@
 {% extends 'base.html.j2' %}
 {% block content %}
     <main class="main main--about">
-        {{ lipsum(3) }}
+        <img src="../static/img/profile.jpg" alt="Profile Picture" class="main__picture"> 
+        <p>Electronic Engineer graduated from Universidad de Antioquia in Medellín, Colombia.
+            Scholarship holder of the KOSPIE Colombia 2019/2020 program awarded by the German government (DAAD). 
+            I have studied at the Technical University of Munich, Germany. Dean's list at the University of Antioquia.
+            I have worked with companies in Germany and United States, such as Texas Instruments as a Validation Engineer and at Bescutter as a Support Engineer.
+            I have been learning and working with web development the last year. 
+        </p>
+        <p>Hardware and software programming enthusiast. I like to learn and work with a team to achieve goals. Passion for technology.
+            For more info you can download my CV <a href="../static/doc/CV_HugoCosme.pdf" class="main__link" download="CV_HugoCosme">here</a>.
+        </p>
+        
+        <h2>Languages:</h2>
+        <ul>
+            <li>Spanish - Mother tongue</li>
+            <li>English - Fluent</li>
+            <li>German - Advanced</li>
+        </ul>
+
+        <h2>Programming languages:</h2> 
+        <div class="main__languages">
+            <div>
+                <h3>Web Development:</h3>
+                <ul><li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Flask/Jinja2</li>
+                <li>MySQL</li>
+                <li>MongoDB</li></ul>
+            </div>
+
+            <div>
+                <h3>Object Oriented:</h3>
+                <ul><li>C++</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>LC3(Assembly)</li></ul>
+            </div>
+
+            <div>
+                <h3>Automation:</h3>
+                <ul><li>Ladder</li>
+                <li>AWL</li>
+                <li>SCL</li>
+                <li>Matlab</li>
+                </ul>
+            </div>
+        </div>
     </main>
 {% endblock %}

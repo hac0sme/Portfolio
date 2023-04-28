@@ -2,3 +2,4 @@
 .vscode
 notes
 __pycache__
+.flaskenv

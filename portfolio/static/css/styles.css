@@ -44,12 +44,40 @@ body {
 
 .main--about, .main--error {
   flex-direction: column;
-  max-width: 500px;
+  max-width: 35rem;
   padding: 0 1rem;
   line-height: 150%;
   text-align: justify;
   text-justify: inter-word;
 }
+
+.main__languages{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+}
+
+.main__link{
+  color: #3d84a3
+}
+.main__link:hover{
+  text-decoration: none ;
+}
+
+@media screen and (max-width: 550px) {
+  .main__languages{
+    flex-direction: column;
+  }
+}
+
+.main__picture{
+  max-width: 200px; 
+  height: auto;
+  margin: 0 auto 1em;
+  border-radius: 10%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 
 .contact {
   display: flex;
@@ -190,10 +218,22 @@ body {
   }
 }
 
+.project__paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .project__heading {
   margin: 0;
   font-size: 2rem;
   line-height: 150%;
+}
+
+.project__title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
 }
 
 .project__heading--meta {
@@ -223,6 +263,8 @@ body {
 
 .cta:hover {
   text-decoration: underline;
+  transform: translateY(-3px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .cta__icon {

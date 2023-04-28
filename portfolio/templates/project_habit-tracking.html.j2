@@ -10,18 +10,22 @@
 
             <article class="project">
                 <article class="project__content">
-                    <h2 class="project__heading">{{ project['name'] }}</h2>
+                    <div class="project__title">
+                        <h2 class="project__heading">{{ project['name'] }}:</h2>
+                        <a class="cta" href="{{ project['prod'] }}" target="_blank">
+                            <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                            <span>View</span>
+                        </a>
+                    </div>
 
-                    <p>
-                        Hi, I'm Bob! I love helping students learn to code and master software development.
-                        I've been teaching online for over 6 years, and I founded Teclado to bring software
-                        development to everyone—my objective is for you to truly understand everything
-                        that goes on behind the scenes.
+                    <p class="project__paragraph">
+                        It is a web application created to keep track of personal goals or purposes.
+                        In it, new habits or activities can be added and can be checked when completed or unchecked each day,
+                        keeping a progress count. It is fully responsive and suitable for any device.
                     </p>
-                    <p>
-                        Coding is extremely rewarding. As you learn, things start to click and make sense.
-                        You can join the dots of all the things that weren't quite clear before.
-                        I'm here to make that journey quick and painless!
+                    <p class="project__paragraph">
+                        Created by me for personal use, since I have not yet integrated user registration, 
+                        although it remains pending as a future goal.
                     </p>
                 </article>
 
@@ -33,13 +37,12 @@
                             <li class="technology-list__item">Python</li>
                             <li class="technology-list__item">HTML</li>
                             <li class="technology-list__item">CSS</li>
+                            <li class="technology-list__item">Flask/Jinja2</li>
+                            <li class="technology-list__item">Mongo DB</li>
                         </ul>
                     </article>
 
-                    <a class="cta" href="{{ project['prod'] }}">
-                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
-                        View in production
-                    </a>
+                    
                 </section>
             </article>
         </div>
