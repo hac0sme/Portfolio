@@ -5,15 +5,16 @@ projects = [
     {
         "name": "Coefficient Voting for Residential Properties",
         "thumb": "img/voting.png",
-        "hero": "img/voting-hero.png",
+        "hero": "img/voting-hero.jpg",
         "categories": ["PHP", "JavaScript", "MySQL"],
         "slug": "coeff-voting",
         "prod": "https://votacionesasamblea.space/usuario/1",
+        #"prod": "https://nifty-water-88162.pktriot.net/Encuesta/usuario/38ab678e915f4f15fdc015329648f23c",
     },
     {
         "name": "Movies Watch List",
         "thumb": "img/movies.png",
-        "hero": "img/movies-hero.png",
+        "hero": "img/movies-hero.jpg",
         "categories": ["Python", "Mongo DB", "Jinja2"],
         "slug": "movies-watchlist",
         "prod": "https://movieswatchlist.onrender.com/",
@@ -30,7 +31,7 @@ projects = [
     {
         "name": "Microblog",
         "thumb": "img/blog.png",
-        "hero": "img/blog-hero.png",
+        "hero": "img/blog-hero.jpg",
         "categories": ["Python", "Mongo DB"],
         "slug": "microblog",
          "prod": "https://microblog-70cy.onrender.com/",

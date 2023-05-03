@@ -293,7 +293,25 @@ body {
   transform: translateY(2px);
 }
 
+.footer {
+  padding: 2rem;
+  color: #1c2023;
+  text-align: center;
+  border-top: 2px solid;
+}
+
+.footer--contact {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /* Utility class to remove link styles */
 .u-bare-link {
   text-decoration: none;
+}
+
+.hero, .project-card__image{
+  border-radius: 1em;
 }

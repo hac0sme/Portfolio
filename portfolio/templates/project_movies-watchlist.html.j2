@@ -1,0 +1,49 @@
+{% extends 'base.html.j2' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A hand holding a pen, about to write something in a project planner."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <div class="project__title">
+                        <h2 class="project__heading">{{ project['name'] }}:</h2>
+                        <a class="cta" href="{{ project['prod'] }}" target="_blank">
+                            <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                            <span>View</span>
+                        </a>
+                    </div>
+
+                    <p class="project__paragraph">
+                        Web application whose objective is to keep track of favorite movies and series,
+                        allowing to have specific details of each one, such as director, year of release,
+                        casting and related movies, including genres, personal rating and date of the latest view.
+                    </p>
+                    <p class="project__paragraph">
+                        This application has user registration and login for personal tracking, and dark mode option. 
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">CSS</li>
+                            <li class="technology-list__item">Flask/Jinja2</li>
+                            <li class="technology-list__item">Mongo DB</li>
+                        </ul>
+                    </article>
+
+                    
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
