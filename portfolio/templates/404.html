@@ -13,10 +13,13 @@
     <main class="main main--error">
         <h1>404 - Page Not Found</h1>
         <p>
-            Sorry, we couldn't find the page you're looking for.
-            It may have been mis-spelled, or it doesn't exist anymore.
+            Sorry brother, the page you're looking for is lost in metaverse. <br>
+            Or it may have been mis-spelled / doesn't exist anymore.
         </p>
-        <a href="{{ url_for('home') }}">Go to home</a>
+        <a class="cta" href="{{ url_for('home') }}">
+            <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+            <span>Go home</span>
+        </a>
     </main>
 </body>
 
